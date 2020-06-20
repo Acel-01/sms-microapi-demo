@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMS API Settings</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="settings.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/0f19ba4771.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <div class="grid-container">
+        <div id="grid-con">
+            <div id="manage" ><h1>Manage API</h1></div>
+            <div>
+                <h1 class="dropdown topp" onclick="myFunction()">ALL API <i class="fas fa-caret-down righ"></i></h1>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="#" class="lin" onclick="bolden(event)">Overview</a>
+                    <a href="#" class="lin" onclick="bolden(event)">Analytics</a>
+                    <a href="#" class="lin" onclick="bolden(event)">Users</a>
+                    <a href="#" class="lin" onclick="bolden(event)">Active Users</a>
+                    <a href="#" class="lin" onclick="bolden(event)">Payment</a>
+                    <a href="#" class="lin" id="lik" onclick="bolden(event)">Settings</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="grid-contain">
+            <div id="header">
+                <span class="notify notify2">
+                    <img width="30px" style="padding: 0px 0px 5px 0px;" src="Ellipse 1.png" alt="Ellipse">
+                    <i class="far fa-envelope"></i>
+                    <i class="fas fa-bell"></i>
+                </span>
+                <span class="notify note">
+                    <i class="fas fa-search search"></i>
+                    <input type="text" name="search" id="search" placeholder="search">
+                </span>
+            </div>
+            
+            <div id="body">
+                <p id="sms">SMS API</p>
+                <div id="tab">
+                <button class="tablinks" onclick="openPage(event, 'Settings')" id="default1"><img src="vector.png">&nbsp;Settings</button>
+                <button class="tablinks" onclick="openPage(event, 'News')"><img src="vector (1).png">&nbsp;History</button>
+                <button class="tablinks" onclick="openPage(event, 'Contact')"><img src="vector (2).png">&nbsp;Balance</button>
+                <hr></div>
+                <div id="Settings" class="tabcontent">
+                    <p id="accset">Account Settings:</p><br>
+                    <p id="smsacc">SMS API account</p>
+                    <p id="smsapi">You are not connected to your SMS API account</p>
+
+                    <input type="text" class="inp" name="API" id="" placeholder="SMS API Username"><br><br>
+                    <input type="text" class="inp" name="Password" id="" placeholder="API Password"><br><br>
+                    <button type="submit" id="but">Save</button>
+                </div>
+                  
+                <div id="News" class="tabcontent">
+                    <p></p>
+                </div>
+                  
+                <div id="Contact" class="tabcontent">
+                    <p></p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="settings.js"></script>
+</body>
+</html>
